@@ -9,29 +9,131 @@
   <body class="h-screen">
     <div class="grid grid-cols-[3fr_9fr] grid-rows-[2fr_10fr] h-full">
       <aside
-        class="bg-white col-start-1 col-end-2 row-start-1 row-end-3 flex flex-col"
+        class="dark:bg-white col-start-1 col-end-2 row-start-1 row-end-3 flex flex-col"
       >
         <section
           class="flex items-center px-8 py-12.5 border-r-1 border-gray-300 border-b-1"
         >
           <img src="src/imag/logolight.svg" />
         </section>
-        <section>
-          <div class="text-gray-400 p-4 text-[10px]">ALL BOARDS (4)</div>
-          <div class="flex  items-center px-[24px] gap-3">
-            <svg  width="16px" height="16px" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
-                fill="gray"
-              ></path>
-            </svg>
-            <p class="text-[14px] ">Platform Launch</p>
+        <section class="flex flex-col gap-3">
+          <div class="text-gray-400 p-4 text-[12px] font-semibold">
+            ALL BOARDS (3)
           </div>
-          
+          <div class="flex flex-col gap-2">
+            <button
+              class="flex items-center px-[24px] py-[14px] gap-6 w-10/12 bg-[#635fc7] rounded-r-full hover:bg-[#a19fd6]"
+            >
+              <svg
+                width="16px"
+                height="16px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
+                  fill="white"
+                ></path>
+              </svg>
+              <p class="text-[16px] font-semibold dark:text-white">
+                Platform Launch
+              </p>
+            </button>
+            <button
+              class="group flex items-center px-[24px] py-[14px] gap-6 w-10/12 rounded-r-full hover:bg-[#a19fd6]"
+            >
+              <svg
+                width="16px"
+                height="16px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="group-hover:fill-white"
+                  d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
+                  fill="#6b7280"
+                ></path>
+              </svg>
+              <p
+                class="text-[16px] group-hover:text-white font-semibold dark:text-[#6b7280]"
+              >
+                Marketing Plan
+              </p>
+            </button>
+            <button
+              class="group flex items-center px-[24px] py-[14px] gap-6 w-10/12 rounded-r-full hover:bg-[#a19fd6]"
+            >
+              <svg
+                width="16px"
+                height="16px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="group-hover:fill-white"
+                  d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
+                  fill="#6b7280"
+                ></path>
+              </svg>
+              <p
+                class="text-[16px] group-hover:text-white font-semibold dark:text-[#6b7280]"
+              >
+                Roadmap
+              </p>
+            </button>
+            <button
+              class="flex items-center px-[24px] py-[14px] gap-6 w-10/12 rounded-r-full"
+            >
+              <svg
+                width="16px"
+                height="16px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
+                  fill="#635fc7"
+                ></path>
+              </svg>
+              <p class="text-[16px] font-semibold dark:text-[#635fc7]">
+                + Create New Board
+              </p>
+            </button>
+          </div>
         </section>
       </aside>
-      <header class="bg-amber-200 col-start-2 col-end-3 row-start-1 row-end-2">
-        fff
+      <header
+        class="bg-white col-start-2 col-end-3 row-start-1 row-end-2 flex justify-between items-center "
+      >
+        <div class="text-2xl font-bold pl-8">Platform Launch</div>
+        <div class="flex items-center gap-4 pr-5">
+          <button
+            class="w-40 h-12 bg-[#635fc7] text-white text-sm font-bold rounded-3xl"
+          >
+            + Add New Task
+          </button>
+          <svg
+            fill="#6b7280"
+            width="26px"
+            height="26px"
+            viewBox="0 0 32 32"
+            enable-background="new 0 0 32 32"
+            id="Glyph"
+            version="1.1"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              d="M13,16c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,14.346,13,16z"
+              id="XMLID_294_"
+            />
+            <path
+              d="M13,26c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,24.346,13,26z"
+              id="XMLID_295_"
+            />
+            <path
+              d="M13,6c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,4.346,13,6z"
+              id="XMLID_297_"
+            />
+          </svg>
+        </div>
       </header>
       <main class="bg-amber-500 col-start-2 col-end-3 row-start-2 row-end-3">
         fff
