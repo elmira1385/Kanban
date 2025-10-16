@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kanban</title>
   </head>
-  <body class="h-screen">
+  <body class="h-screen relative">
     <div class="grid grid-cols-[3fr_9fr] grid-rows-[2fr_10fr] h-full">
       <aside
         class="dark:bg-white col-start-1 col-end-2 row-start-1 row-end-3 flex flex-col"
@@ -22,24 +22,7 @@
           </div>
           <div class="flex flex-col gap-2">
             <button
-              class="flex items-center px-[24px] py-[14px] gap-6 w-10/12 bg-[#635fc7] rounded-r-full hover:bg-[#a19fd6]"
-            >
-              <svg
-                width="16px"
-                height="16px"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
-                  fill="white"
-                ></path>
-              </svg>
-              <p class="text-[16px] font-semibold dark:text-white">
-                Platform Launch
-              </p>
-            </button>
-            <button
-              class="group flex items-center px-[24px] py-[14px] gap-6 w-10/12 rounded-r-full hover:bg-[#a19fd6]"
+              class="flex items-center px-[24px] py-[14px] gap-6 w-10/12 bg-[#635fc7] group rounded-r-full hover:bg-[#a19fd6] text-white"
             >
               <svg
                 width="16px"
@@ -48,6 +31,26 @@
               >
                 <path
                   class="group-hover:fill-white"
+                  d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
+                  fill="white"
+                ></path>
+              </svg>
+              <p
+                class="text-[16px] font-semibold dark:text-white group-hover:text-white"
+              >
+                Platform Launch
+              </p>
+            </button>
+            <button
+              class="group flex items-center px-[24px] py-[14px] gap-6 w-10/12 rounded-r-full hover:bg-[#a19fd6] focus:bg-[#635fc7] text-gray-500 focus:text-white"
+            >
+              <svg
+                width="16px"
+                height="16px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="group-hover:fill-white group-focus:fill-white"
                   d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
                   fill="#6b7280"
                 ></path>
@@ -59,7 +62,7 @@
               </p>
             </button>
             <button
-              class="group flex items-center px-[24px] py-[14px] gap-6 w-10/12 rounded-r-full hover:bg-[#a19fd6]"
+              class="group flex items-center px-[24px] py-[14px] gap-6 w-10/12 rounded-r-full hover:bg-[#a19fd6] focus:bg-[#635fc7] text-gray-500 focus:text-white"
             >
               <svg
                 width="16px"
@@ -67,7 +70,7 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  class="group-hover:fill-white"
+                  class="group-hover:fill-white group-focus:fill-white"
                   d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
                   fill="#6b7280"
                 ></path>
@@ -91,7 +94,7 @@
                   fill="#635fc7"
                 ></path>
               </svg>
-              <p class="text-[16px] font-semibold dark:text-[#635fc7]">
+              <p class="text-[16px] font-semibold text-[#635fc7]">
                 + Create New Board
               </p>
             </button>
@@ -99,11 +102,11 @@
         </section>
       </aside>
       <header
-        class="bg-white col-start-2 col-end-3 row-start-1 row-end-2 flex justify-between items-center "
+        class="bg-white col-start-2 col-end-3 row-start-1 row-end-2 flex justify-between items-center border-b-1 border-gray-300"
       >
         <div class="text-2xl font-bold pl-8">Platform Launch</div>
         <div class="flex items-center gap-4 pr-5">
-          <button
+          <button 
             class="w-40 h-12 bg-[#635fc7] text-white text-sm font-bold rounded-3xl"
           >
             + Add New Task
@@ -135,9 +138,98 @@
           </svg>
         </div>
       </header>
-      <main class="bg-amber-500 col-start-2 col-end-3 row-start-2 row-end-3">
-        fff
+      <main
+        class="bg-[#f4f7fd] col-start-2 col-end-3 row-start-2 row-end-3 flex justify-between py-5 px-12 border-l-1 border-gray-300"
+      >
+        <div class="flex flex-col gap-4">
+          <section class="flex gap-4 items-center">
+            <div
+              class="h-4 w-4 rounded-full"
+              style="background: rgb(73, 196, 229)"
+            ></div>
+            <div class="text-gray-400 text-[12px] font-semibold">TODO (4)</div>
+          </section>
+          <section class="flex flex-col gap-4">
+            <div class="flex flex-col bg-white p-5 shadow-md rounded-lg">
+              <p class="text-sm font-bold">Build UI for onboarding flow</p>
+              <span class="text-gray-400 p-2 text-xs font-bold"
+                >0 of 1 subtasks</span
+              >
+            </div>
+          </section>
+        </div>
+        <div class="flex flex-col gap-4">
+          <section class="flex gap-4 items-center">
+            <div
+              class="h-4 w-4 rounded-full"
+              style="background: rgb(132, 113, 242)"
+            ></div>
+            <div class="text-gray-400 text-[12px] font-semibold">TODO (4)</div>
+          </section>
+          <section class="flex flex-col gap-4">
+            <div class="flex flex-col bg-white p-5 shadow-md rounded-lg">
+              <p class="text-sm font-bold">Build UI for onboarding flow</p>
+              <span class="text-gray-400 p-2 text-xs font-bold"
+                >0 of 1 subtasks</span
+              >
+            </div>
+          </section>
+        </div>
+        <div class="flex flex-col gap-4">
+          <section class="flex gap-4 items-center">
+            <div
+              class="h-4 w-4 rounded-full"
+              style="background: rgb(103, 226, 174)"
+            ></div>
+            <div class="text-gray-400 text-[12px] font-semibold">TODO (4)</div>
+          </section>
+          <section class="flex flex-col gap-4">
+            <div class="flex flex-col bg-white p-5 shadow-md rounded-lg">
+              <p class="text-sm font-bold">Build UI for onboarding flow</p>
+              <span class="text-gray-400 p-2 text-xs font-bold"
+                >0 of 1 subtasks</span
+              >
+            </div>
+          </section>
+        </div>
       </main>
+    </div>
+    <div class="fixed h-[100%] w-[100%] top-0 lef-0 bg-[#0006] z-30 hidden">
+      <div
+        class="h-[450px] w-[650px] bg-white fixed z-50 top-[50%] left-[50%] -translate-[50%] flex flex-col p-5 gap-4 rounded-lg"
+      >
+        <p class="text-[16px] font-bold">Add New Task</p>
+        <label class="text-[14px] font-bold text-gray-400" for="title"
+          >title</label
+        >
+        <input
+          class="border-1 p-2 border-gray-400 rounded-sm"
+          type="text"
+          name="title"
+        />
+        <label class="text-[14px] font-bold text-gray-400" for="title"
+          >Description</label
+        >
+        <input
+          class="border-1 h-20 p-2 border-gray-400 rounded-sm"
+          type="text"
+          name="title"
+        />
+        <label class="text-[14px] font-bold text-gray-400" for="title"
+          >Status</label
+        >
+        <select
+          class="border-1  p-2 border-gray-400 rounded-sm"
+          type="text"
+          name="title"
+        >
+        <option  ></option>
+          <option  value="TODO">TODO</option>
+          <option value="TODO">DOING</option>
+          <option value="TODO">Done</option>
+        </select>
+        <button class=" rounded-2xl bg-[#635fc7] text-white h-10 mt-3">Create Task</button>
+      </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
