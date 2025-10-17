@@ -106,7 +106,7 @@
       >
         <div class="text-2xl font-bold pl-8">Platform Launch</div>
         <div class="flex items-center gap-4 pr-5">
-          <button 
+          <button id="showHidden"
             class="w-40 h-12 bg-[#635fc7] text-white text-sm font-bold rounded-3xl"
           >
             + Add New Task
@@ -139,15 +139,15 @@
         </div>
       </header>
       <main
-        class="bg-[#f4f7fd] col-start-2 col-end-3 row-start-2 row-end-3 flex justify-between py-5 px-12 border-l-1 border-gray-300"
+        class="bg-[#f4f7fd] col-start-2 col-end-3 row-start-2 row-end-3 flex justify-between py-5 px-12 border-l-1 border-gray-300 overflow-auto"
       >
-        <div class="flex flex-col gap-4">
+        <div id="todo" class="flex flex-col gap-4">
           <section class="flex gap-4 items-center">
             <div
               class="h-4 w-4 rounded-full"
               style="background: rgb(73, 196, 229)"
             ></div>
-            <div class="text-gray-400 text-[12px] font-semibold">TODO (4)</div>
+            <div class="text-gray-400 text-[12px] font-semibold">TODO( <span id="countAddDiv">1</span>)</div>
           </section>
           <section class="flex flex-col gap-4">
             <div class="flex flex-col bg-white p-5 shadow-md rounded-lg">
@@ -158,13 +158,13 @@
             </div>
           </section>
         </div>
-        <div class="flex flex-col gap-4">
+        <div id="Doing" class="flex flex-col gap-4">
           <section class="flex gap-4 items-center">
             <div
               class="h-4 w-4 rounded-full"
               style="background: rgb(132, 113, 242)"
             ></div>
-            <div class="text-gray-400 text-[12px] font-semibold">TODO (4)</div>
+            <div class="text-gray-400 text-[12px] font-semibold">DOING ( <span id="countAddDiv2">1</span>)</div>
           </section>
           <section class="flex flex-col gap-4">
             <div class="flex flex-col bg-white p-5 shadow-md rounded-lg">
@@ -175,13 +175,13 @@
             </div>
           </section>
         </div>
-        <div class="flex flex-col gap-4">
+        <div id="Done" class="flex flex-col gap-4">
           <section class="flex gap-4 items-center">
             <div
               class="h-4 w-4 rounded-full"
               style="background: rgb(103, 226, 174)"
             ></div>
-            <div class="text-gray-400 text-[12px] font-semibold">TODO (4)</div>
+            <div class="text-gray-400 text-[12px] font-semibold">Done ( <span id="countAddDiv3">1</span>)</div>
           </section>
           <section class="flex flex-col gap-4">
             <div class="flex flex-col bg-white p-5 shadow-md rounded-lg">
@@ -194,43 +194,43 @@
         </div>
       </main>
     </div>
-    <div class="fixed h-[100%] w-[100%] top-0 lef-0 bg-[#0006] z-30 hidden">
-      <div
-        class="h-[450px] w-[650px] bg-white fixed z-50 top-[50%] left-[50%] -translate-[50%] flex flex-col p-5 gap-4 rounded-lg"
+    <div id="module" class="fixed h-[100%] w-[100%] top-0 lef-0 bg-[#0006] z-30 hidden">  
+    </div>
+    <div id="mudulContant"
+        class="show h-[450px] w-[650px] bg-white fixed z-50 top-[50%] left-[50%] -translate-[50%] flex flex-col p-5 gap-4 rounded-lg"
       >
         <p class="text-[16px] font-bold">Add New Task</p>
         <label class="text-[14px] font-bold text-gray-400" for="title"
           >title</label
         >
-        <input
+        <input id="titleEl"
           class="border-1 p-2 border-gray-400 rounded-sm"
           type="text"
           name="title"
         />
-        <label class="text-[14px] font-bold text-gray-400" for="title"
+        <label class="text-[14px] font-bold text-gray-400" for="Description"
           >Description</label
         >
-        <input
+        <input id="DescriptionEl"
           class="border-1 h-20 p-2 border-gray-400 rounded-sm"
           type="text"
-          name="title"
+          name="Description"
         />
-        <label class="text-[14px] font-bold text-gray-400" for="title"
+        <label class="text-[14px] font-bold text-gray-400" for="Status"
           >Status</label
         >
-        <select
+        <select id="StatusEl"
           class="border-1  p-2 border-gray-400 rounded-sm"
           type="text"
-          name="title"
+          name="Status"
         >
         <option  ></option>
           <option  value="TODO">TODO</option>
-          <option value="TODO">DOING</option>
-          <option value="TODO">Done</option>
+          <option value="DOING">DOING</option>
+          <option value="Done">Done</option>
         </select>
-        <button class=" rounded-2xl bg-[#635fc7] text-white h-10 mt-3">Create Task</button>
+        <button id="addDiv" class=" rounded-2xl bg-[#635fc7] text-white h-10 mt-3">Create Task</button>
       </div>
-    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
