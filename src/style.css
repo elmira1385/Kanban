@@ -11,5 +11,5 @@ body{
   display: none;
 }
 .move{
-  transform: translateX(-30px);
+  transform: translateX(30px);
 }

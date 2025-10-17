@@ -45,7 +45,7 @@ addDiv.addEventListener("click",()=>{
         todoEl.innerHTML+=
         `
         <section class="flex flex-col gap-4">
-            <div class="flex flex-col bg-white dark:bg-[#2b2c37] p-5 shadow-md rounded-lg w-70">
+            <div class="flex flex-col bg-white dark:bg-[#2b2c37] p-5 shadow-md rounded-lg w-70 hover:opacity-50">
               <p class="text-sm font-bold dark:text-white">${titleElInput}</p>
               <span class="text-gray-400 p-2 text-xs font-bold"
                 >${titleElInput}</span
@@ -61,7 +61,7 @@ addDiv.addEventListener("click",()=>{
          DoingEl.innerHTML+=
         `
         <section class="flex flex-col gap-4">
-            <div class="flex flex-col bg-white dark:bg-[#2b2c37] p-5 shadow-md rounded-lg w-70">
+            <div class="flex flex-col bg-white dark:bg-[#2b2c37] p-5 shadow-md rounded-lg w-70 hover:opacity-50">
               <p class="text-sm font-bold dark:text-white">${titleElInput}</p>
               <span class="text-gray-400 p-2 text-xs font-bold"
                 >${titleElInput}</span
@@ -75,7 +75,7 @@ addDiv.addEventListener("click",()=>{
         DoneEl.innerHTML+=
          `
         <section class="flex flex-col gap-4">
-            <div class="flex flex-col bg-white dark:bg-[#2b2c37] p-5 shadow-md rounded-lg w-70">
+            <div class="flex flex-col bg-white dark:bg-[#2b2c37] p-5 shadow-md rounded-lg w-70 hover:opacity-50">
               <p class="text-sm font-bold dark:text-white">${titleElInput}</p>
               <span class="text-gray-400 p-2 text-xs font-bold"
                 >${titleElInput}</span
