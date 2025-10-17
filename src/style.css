@@ -2,9 +2,14 @@
 
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 body{
   font-family: "Plus Jakarta Sans" ,sans-serif;
 }
 .show{
   display: none;
+}
+.move{
+  transform: translateX(-30px);
 }

@@ -12,6 +12,9 @@ const DoneEl=document.getElementById("Done") as HTMLDivElement
 const countAddDivEl=document.getElementById("countAddDiv") as HTMLSpanElement
 const countAddDiv2El=document.getElementById("countAddDiv2") as HTMLSpanElement
 const countAddDiv3El=document.getElementById("countAddDiv3") as HTMLSpanElement
+const changeColorEl=document.getElementById("changeColor") as HTMLDivElement
+const changeCircleEl=document.getElementById("changeCircle") as HTMLDivElement
+
 let counter1=1
 let counter2=1
 let counter3=1
@@ -42,10 +45,10 @@ addDiv.addEventListener("click",()=>{
         todoEl.innerHTML+=
         `
         <section class="flex flex-col gap-4">
-            <div class="flex flex-col bg-white p-5 shadow-md rounded-lg">
-              <p class="text-sm font-bold">${titleElInput}</p>
+            <div class="flex flex-col bg-white dark:bg-[#2b2c37] p-5 shadow-md rounded-lg w-70">
+              <p class="text-sm font-bold dark:text-white">${titleElInput}</p>
               <span class="text-gray-400 p-2 text-xs font-bold"
-                >${DescriptionElInput}</span
+                >${titleElInput}</span
               >
             </div>
           </section>
@@ -58,10 +61,10 @@ addDiv.addEventListener("click",()=>{
          DoingEl.innerHTML+=
         `
         <section class="flex flex-col gap-4">
-            <div class="flex flex-col bg-white p-5 shadow-md rounded-lg">
-              <p class="text-sm font-bold">${titleElInput}</p>
+            <div class="flex flex-col bg-white dark:bg-[#2b2c37] p-5 shadow-md rounded-lg w-70">
+              <p class="text-sm font-bold dark:text-white">${titleElInput}</p>
               <span class="text-gray-400 p-2 text-xs font-bold"
-                >${DescriptionElInput}</span
+                >${titleElInput}</span
               >
             </div>
           </section>
@@ -72,10 +75,10 @@ addDiv.addEventListener("click",()=>{
         DoneEl.innerHTML+=
          `
         <section class="flex flex-col gap-4">
-            <div class="flex flex-col bg-white p-5 shadow-md rounded-lg">
-              <p class="text-sm font-bold">${titleElInput}</p>
+            <div class="flex flex-col bg-white dark:bg-[#2b2c37] p-5 shadow-md rounded-lg w-70">
+              <p class="text-sm font-bold dark:text-white">${titleElInput}</p>
               <span class="text-gray-400 p-2 text-xs font-bold"
-                >${DescriptionElInput}</span
+                >${titleElInput}</span
               >
             </div>
           </section>
@@ -88,6 +91,10 @@ addDiv.addEventListener("click",()=>{
     mudulContantEl.classList.add("show")
 })
 
+changeColorEl.addEventListener("click",()=>{
+    document.documentElement.classList.toggle("dark")
+    changeCircleEl.classList.toggle("move")
+})
 
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -8,11 +8,11 @@
   </head>
   <body class="h-screen relative">
     <div class="grid grid-cols-[3fr_9fr] grid-rows-[2fr_10fr] h-full">
-      <aside
-        class="dark:bg-white col-start-1 col-end-2 row-start-1 row-end-3 flex flex-col"
+      <aside 
+        class="bg-white dark:bg-[#2b2c37] col-start-1 col-end-2 row-start-1 row-end-3 flex flex-col relative"
       >
         <section
-          class="flex items-center px-8 py-12.5 border-r-1 border-gray-300 border-b-1"
+          class="flex items-center px-8 py-12 border-r-1 border-gray-300 dark:border-gray-500 border-b-1"
         >
           <img src="src/imag/logolight.svg" />
         </section>
@@ -30,13 +30,13 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  class="group-hover:fill-white"
+                  class="light:group-hover:fill-white"
                   d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
                   fill="white"
                 ></path>
               </svg>
               <p
-                class="text-[16px] font-semibold dark:text-white group-hover:text-white"
+                class="text-[16px] font-semibold text-white group-hover:text-white"
               >
                 Platform Launch
               </p>
@@ -56,13 +56,13 @@
                 ></path>
               </svg>
               <p
-                class="text-[16px] group-hover:text-white font-semibold dark:text-[#6b7280]"
+                class="text-[16px] l group-hover:text-white font-semibold text-[#6b7280] group-focus:text-white "
               >
                 Marketing Plan
               </p>
             </button>
             <button
-              class="group flex items-center px-[24px] py-[14px] gap-6 w-10/12 rounded-r-full hover:bg-[#a19fd6] focus:bg-[#635fc7] text-gray-500 focus:text-white"
+              class="group flex items-center px-[24px] py-[14px] gap-6 w-10/12 rounded-r-full hover:bg-[#a19fd6]  focus:bg-[#635fc7]  text-gray-500  focus:text-white"
             >
               <svg
                 width="16px"
@@ -76,7 +76,7 @@
                 ></path>
               </svg>
               <p
-                class="text-[16px] group-hover:text-white font-semibold dark:text-[#6b7280]"
+                class="text-[16px] l group-hover:text-white font-semibold text-[#6b7280] group-focus:text-white"
               >
                 Roadmap
               </p>
@@ -100,11 +100,20 @@
             </button>
           </div>
         </section>
+        <section class="flex  absolute bottom-5 left-5 px-4">
+          <div class="bg-[#f4f7fd] dark:bg-[#20212c] px-24 py-3 flex justify-center items-center gap-3 rounded-md">
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M6.474.682c.434-.11.718.406.481.78A6.067 6.067 0 0 0 6.01 4.72c0 3.418 2.827 6.187 6.314 6.187.89.002 1.77-.182 2.584-.54.408-.18.894.165.724.57-1.16 2.775-3.944 4.73-7.194 4.73-4.292 0-7.771-3.41-7.771-7.615 0-3.541 2.466-6.518 5.807-7.37Zm8.433.07c.442-.294.969.232.674.674l-.525.787a1.943 1.943 0 0 0 0 2.157l.525.788c.295.441-.232.968-.674.673l-.787-.525a1.943 1.943 0 0 0-2.157 0l-.786.525c-.442.295-.97-.232-.675-.673l.525-.788a1.943 1.943 0 0 0 0-2.157l-.525-.787c-.295-.442.232-.968.674-.673l.787.525a1.943 1.943 0 0 0 2.157 0Z" fill="#828fa3"></path></svg>
+            <div id="changeColor" class="h-6 w-14 bg-[#635fc7] rounded-2xl  flex justify-center items-center relative">
+              <div id="changeCircle" class=" h-4 w-4 bg-white rounded-2xl absolute right-1"></div>
+            </div>
+            <svg width="19" height="19" xmlns="http://www.w3.org/2000/svg"><path d="M9.167 15.833a.833.833 0 0 1 .833.834v.833a.833.833 0 0 1-1.667 0v-.833a.833.833 0 0 1 .834-.834ZM3.75 13.75a.833.833 0 0 1 .59 1.422l-1.25 1.25a.833.833 0 0 1-1.18-1.178l1.25-1.25a.833.833 0 0 1 .59-.244Zm10.833 0c.221 0 .433.088.59.244l1.25 1.25a.833.833 0 0 1-1.179 1.178l-1.25-1.25a.833.833 0 0 1 .59-1.422ZM9.167 5a4.167 4.167 0 1 1 0 8.334 4.167 4.167 0 0 1 0-8.334Zm-7.5 3.333a.833.833 0 0 1 0 1.667H.833a.833.833 0 1 1 0-1.667h.834Zm15.833 0a.833.833 0 0 1 0 1.667h-.833a.833.833 0 0 1 0-1.667h.833Zm-1.667-6.666a.833.833 0 0 1 .59 1.422l-1.25 1.25a.833.833 0 1 1-1.179-1.178l1.25-1.25a.833.833 0 0 1 .59-.244Zm-13.333 0c.221 0 .433.088.59.244l1.25 1.25a.833.833 0 0 1-1.18 1.178L1.91 3.09a.833.833 0 0 1 .59-1.422ZM9.167 0A.833.833 0 0 1 10 .833v.834a.833.833 0 1 1-1.667 0V.833A.833.833 0 0 1 9.167 0Z" fill="#828fa3"></path></svg>
+          </div>
+        </section>
       </aside>
       <header
-        class="bg-white col-start-2 col-end-3 row-start-1 row-end-2 flex justify-between items-center border-b-1 border-gray-300"
+        class="bg-white dark:bg-[#2b2c37] col-start-2 col-end-3 row-start-1 row-end-2 flex justify-between items-center border-b-1 border-gray-300 dark:border-gray-500"
       >
-        <div class="text-2xl font-bold pl-8">Platform Launch</div>
+        <div class="text-2xl font-bold pl-8 dark:text-white">Platform Launch</div>
         <div class="flex items-center gap-4 pr-5">
           <button id="showHidden"
             class="w-40 h-12 bg-[#635fc7] text-white text-sm font-bold rounded-3xl"
@@ -139,7 +148,7 @@
         </div>
       </header>
       <main
-        class="bg-[#f4f7fd] col-start-2 col-end-3 row-start-2 row-end-3 flex justify-between py-5 px-12 border-l-1 border-gray-300 overflow-auto"
+        class="bg-[#f4f7fd] dark:bg-[#20212c] col-start-2 col-end-3 row-start-2 row-end-3 flex justify-between py-5 px-12 border-l-1 border-gray-300 overflow-auto dark:border-gray-500"
       >
         <div id="todo" class="flex flex-col gap-4">
           <section class="flex gap-4 items-center">
@@ -150,8 +159,8 @@
             <div class="text-gray-400 text-[12px] font-semibold">TODO( <span id="countAddDiv">1</span>)</div>
           </section>
           <section class="flex flex-col gap-4">
-            <div class="flex flex-col bg-white p-5 shadow-md rounded-lg">
-              <p class="text-sm font-bold">Build UI for onboarding flow</p>
+            <div class="flex flex-col bg-white dark:bg-[#2b2c37] p-5 shadow-md rounded-lg w-70">
+              <p class="text-sm font-bold dark:text-white">Build UI for onboarding flow</p>
               <span class="text-gray-400 p-2 text-xs font-bold"
                 >0 of 1 subtasks</span
               >
@@ -167,8 +176,8 @@
             <div class="text-gray-400 text-[12px] font-semibold">DOING ( <span id="countAddDiv2">1</span>)</div>
           </section>
           <section class="flex flex-col gap-4">
-            <div class="flex flex-col bg-white p-5 shadow-md rounded-lg">
-              <p class="text-sm font-bold">Build UI for onboarding flow</p>
+            <div class="flex flex-col bg-white dark:bg-[#2b2c37] p-5 shadow-md rounded-lg w-70">
+              <p class="text-sm font-bold dark:text-white">Build UI for onboarding flow</p>
               <span class="text-gray-400 p-2 text-xs font-bold"
                 >0 of 1 subtasks</span
               >
@@ -184,8 +193,8 @@
             <div class="text-gray-400 text-[12px] font-semibold">Done ( <span id="countAddDiv3">1</span>)</div>
           </section>
           <section class="flex flex-col gap-4">
-            <div class="flex flex-col bg-white p-5 shadow-md rounded-lg">
-              <p class="text-sm font-bold">Build UI for onboarding flow</p>
+            <div class="flex flex-col bg-white dark:bg-[#2b2c37] p-5 shadow-md rounded-lg w-70">
+              <p class="text-sm font-bold dark:text-white">Build UI for onboarding flow</p>
               <span class="text-gray-400 p-2 text-xs font-bold"
                 >0 of 1 subtasks</span
               >
@@ -197,14 +206,14 @@
     <div id="module" class="fixed h-[100%] w-[100%] top-0 lef-0 bg-[#0006] z-30 hidden">  
     </div>
     <div id="mudulContant"
-        class="show h-[450px] w-[650px] bg-white fixed z-50 top-[50%] left-[50%] -translate-[50%] flex flex-col p-5 gap-4 rounded-lg"
+        class="show h-[430px] w-[650px] bg-white dark:bg-[#2b2c37] fixed z-50 top-[50%] left-[50%] -translate-[50%] flex flex-col p-5 gap-4 rounded-lg"
       >
         <p class="text-[16px] font-bold">Add New Task</p>
         <label class="text-[14px] font-bold text-gray-400" for="title"
           >title</label
         >
         <input id="titleEl"
-          class="border-1 p-2 border-gray-400 rounded-sm"
+          class="border-1 p-2 dark:text-white border-gray-400 dark:border-[#20212c] rounded-sm dark:bg-[#20212c]"
           type="text"
           name="title"
         />
@@ -212,7 +221,7 @@
           >Description</label
         >
         <input id="DescriptionEl"
-          class="border-1 h-20 p-2 border-gray-400 rounded-sm"
+          class="border-1 p-2 dark:text-white border-gray-400 dark:border-[#20212c] rounded-sm dark:bg-[#20212c]"
           type="text"
           name="Description"
         />
@@ -220,7 +229,7 @@
           >Status</label
         >
         <select id="StatusEl"
-          class="border-1  p-2 border-gray-400 rounded-sm"
+          class="border-1 p-2 dark:text-white border-gray-400 dark:border-[#20212c] rounded-sm dark:bg-[#20212c]"
           type="text"
           name="Status"
         >
